@@ -7,7 +7,7 @@
 
 body {
 	font-size: 24px;
-	font-family: YanoneKaffeesatzRegular, Georgia, serif;
+	font-family: YanoneKaffeesatzLight, Georgia, serif;
 }
 
 a {
@@ -20,15 +20,12 @@ a:hover {
 }
 
 h1, h2 {
+	font-family: YanoneKaffeesatzRegular;
 	font-weight: normal;
 	text-align: center;
 	text-shadow: 1px 1px 1px #fff;
 	-moz-text-shadow: 1px 1px 1px #fff;
 	-webkit-text-shadow: 1px 1px 1px #fff;
-}
-
-p {
-	font-family: YanoneKaffeesatzLight;
 }
 
 hr {
