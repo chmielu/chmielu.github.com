@@ -50,6 +50,8 @@ ul {
 	border-top: thin solid;
 	margin-top: 20px;
 	padding-top: 20px;
+	clear: both;
+	overflow: hidden;
 }
 
 #contact {
