@@ -13,10 +13,15 @@ body {
 a {
 	color: #d76d6d;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {
 	color: #c0d4f0;
+}
+
+del a {
+	cursor: default;
 }
 
 h1, h2 {
