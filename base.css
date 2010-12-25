@@ -34,12 +34,19 @@ h1, h2 {
 }
 
 ul {
-	margin-left: 20px;
-	list-style-type: circle;
+	margin-right: 120px;
+	list-style-type: none;
 }
 
 li {
-	margin: 5px 0;
+	padding: 5px 0;
+	border-bottom: thin solid #ccc;
+}
+
+li span {
+	font-family: YanoneKaffeesatzRegular;
+	display: inline-block;
+	width: 30%;
 }
 
 #page {
