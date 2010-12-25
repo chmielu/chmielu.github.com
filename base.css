@@ -6,7 +6,7 @@
 }
 
 body {
-	font-size: 24px;
+	font-size: 16px;
 	font-family: YanoneKaffeesatzLight, Georgia, serif;
 }
 
@@ -33,6 +33,11 @@ hr {
 	border: none;
 	height: 1px;
 	margin: 20px;
+}
+
+ul {
+	margin-left: 20px;
+	list-style-type: circle;
 }
 
 #page {
