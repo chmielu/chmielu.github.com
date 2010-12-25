@@ -4,53 +4,54 @@
 	<meta charset="utf-8">
 	<title>Robert Chmielowiec</title>
 	<link rel="stylesheet" type="text/css" href="base.css">
+	<script type="text/javascript" src="tabs.js"></script>
 </head>
 
-<body>
+<body onload="checkCookie()">
 	<div id="page">
 		<h1>Robert Chmielowiec</h1>
-		<h2><a href="#portfolio">portfolio</a> / <del><a>skills</a></del>/ <a href="#contact">contact</a></h2>
+		<h2><a onclick="showId('portfolio')">portfolio</a> / <del><a>skills</a></del> / <a onclick="showId('contact')">contact</a></h2>
 
-		<hr id="portfolio">
+		<div id="portfolio">
+			<div class="item">
+				<a href="https://github.com/chaosk/teerace">
+					<img src="imgs/teerace.jpg" alt="teerace" title="teerace">
+					LINK
+				</a>
+				<p class="right">Used: HTML5, CSS3</p>
+			</div>
 
-		<div class="item">
-			<a href="https://github.com/chaosk/teerace">
-				<img src="imgs/teerace.jpg" alt="teerace" title="teerace">
-				LINK
-			</a>
-			<p class="right">Used: HTML5, CSS3</p>
+			<div class="item">
+				<a href="http://ksocha.com">
+					<img src="imgs/ksocha.jpg" alt="ksocha" title="ksocha.com">
+					LINK
+				</a>
+				<p class="right">Used: HTML5, CSS3, JS</p>
+			</div>
+
+			<div class="item">
+				<a href="http://code.ksocha.com">
+					<img src="imgs/code.ksocha.jpg" alt="code.ksocha" title="code.ksocha.com">
+					LINK
+				</a>
+				<p class="right">Used: HTML5, CSS3</p>
+			</div>
+
+			<div class="item">
+				<a href="http://voodoo.ksocha.com">
+					<img src="imgs/voodoo.jpg" alt="voodoo" title="voodoo.ksocha.com">
+					LINK
+				</a>
+				<p class="right">Used: HTML5, CSS3, GIMP</p>
+			</div>
 		</div>
 
-		<div class="item">
-			<a href="http://ksocha.com">
-				<img src="imgs/ksocha.jpg" alt="ksocha" title="ksocha.com">
-				LINK
-			</a>
-			<p class="right">Used: HTML5, CSS3, JS</p>
+		<div id="contact">
+			<ul>
+				<li>E-Mail: robert@chmielowiec.net</li>
+				<li>GTalk/Jabber: robert@chmielowiec.net</li>
+				<li>Skype: chmielowiecrobert</li>
+			</ul>
 		</div>
-
-		<div class="item">
-			<a href="http://code.ksocha.com">
-				<img src="imgs/code.ksocha.jpg" alt="code.ksocha" title="code.ksocha.com">
-				LINK
-			</a>
-			<p class="right">Used: HTML5, CSS3</p>
-		</div>
-
-		<div class="item">
-			<a href="http://voodoo.ksocha.com">
-				<img src="imgs/voodoo.jpg" alt="voodoo" title="voodoo.ksocha.com">
-				LINK
-			</a>
-			<p class="right">Used: HTML5, CSS3, GIMP</p>
-		</div>
-
-		<hr id="contact">
-
-		<ul>
-			<li>E-Mail: robert@chmielowiec.net</li>
-			<li>GTalk/Jabber: robert@chmielowiec.net</li>
-			<li>Skype: chmielowiecrobert</li>
-		</ul>
 	</div>
 </body>
