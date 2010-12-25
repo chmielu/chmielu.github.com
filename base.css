@@ -1,0 +1,61 @@
+@import 'fonts/stylesheet.css';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 24px;
+	font-family: YanoneKaffeesatzRegular, Georgia, serif;
+}
+
+a {
+	color: #d76d6d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c0d4f0;
+}
+
+h1, h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+p {
+	font-family: YanoneKaffeesatzLight;
+}
+
+hr {
+	background: #000;
+	border: none;
+	height: 1px;
+	margin: 20px;
+}
+
+#page {
+	background: #eee;
+	border: thin solid #ddd;
+	margin: 5% auto;
+	width: 402px;
+	min-height: 300px;
+	padding: 20px;
+}
+
+div.item {
+	background: #fff;
+	border: thin solid #ddd;
+	font-size: 16px;
+	padding: 20px;
+	margin: 20px 0 0;
+}
+
+div.item img {
+	border: thin solid #ddd;
+}
+
+.right {
+	float: right;
+}
