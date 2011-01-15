@@ -57,16 +57,12 @@ li span {
 	padding: 20px;
 }
 
-#portfolio, #contact {
+div.bottom {
 	border-top: thin solid;
 	margin-top: 20px;
 	padding-top: 20px;
 	clear: both;
 	overflow: hidden;
-}
-
-#portfolio {
-	display: none;
 }
 
 div.item {
