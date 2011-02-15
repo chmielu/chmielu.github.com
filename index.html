@@ -1,8 +1,16 @@
+<!--
+	index.html
+	Robert Chmielowiec 2011
+-->
+
 <!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Robert Chmielowiec <robert@chmielowiec.net>">
 	<title>Robert Chmielowiec</title>
+	<meta charset="utf-8">
+	<meta name="generator" content="Geany 0.20">
+	<meta name="author" content="Robert Chmielowiec <robert@chmielowiec.net>">
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -19,16 +27,28 @@
 
 <body>
 	<div id="page">
-		<h1>Robert Chmielowiec</h1>
-		<h2><a href="/">contact</a> / <del><a>skills</a></del> / <a href="design.html">design</a></h2>
-
-		<div class="bottom">
-			<img class="right" src="http://gravatar.com/avatar/d7512bd2106144caef59cd28ddd49662.jpg?s=100" alt="photo" title="Photo of me.">
+		<div id="header">
+			<h1>Robert Chmielowiec</h1>
+		</div>
+		<div id="menu">
 			<ul>
-				<li><span>E-Mail address</span><a href="mailto:robert@chmielowiec.net">robert@chmielowiec.net</a></li>
-				<li><span>GTalk / Jabber</span><a href="xmpp:robert@chmielowiec.net">robert@chmielowiec.net</a></li>
-				<li><span>Skype</span><a href="skype:chmielowiecrobert">chmielowiecrobert</a></li>
+				<li id="contact"><a href="/design/001/">Contact</a></li>
+				<li id="skills"><a href="">Skills</a></li>
+				<li id="design"><a href="/design/001/design.html">Design</a></li>
 			</ul>
 		</div>
+		<div id="content">
+			<img class="right" src="http://gravatar.com/avatar/d7512bd2106144caef59cd28ddd49662.jpg?s=100" width="100" alt="photo" title="Photo of me.">
+			<ul>
+				<li><span>email</span><a href="mailto:robert@chmielowiec.net">robert@chmielowiec.net</a></li>
+				<li><span>skype</span><a href="skype:chmielowiecrobert">chmielowiecrobert</a></li>
+				<li><span>gtalk/jabber</span><a href="xmpp:robert@chmielowiec.net">robert@chmielowiec.net</a></li>
+				<li><span>location</span><a href="http://maps.google.com/maps?q=Pozna%C5%84,%20Poland">Poznań, Poland</a></li>
+			</ul>
+			<a class="button" href="mailto:robert@chmielowiec.net?subject=I%20want%20hire%20you!">Hire me!</a>
+		</div>
+		<div id="footer">Copyright &copy; 1991-2011 Robert Chmielowiec</div>
 	</div>
 </body>
+
+</html>

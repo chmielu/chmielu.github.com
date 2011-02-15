@@ -1,8 +1,16 @@
+<!--
+	design.html
+	Robert Chmielowiec 2011
+-->
+
 <!DOCTYPE html>
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Robert Chmielowiec <robert@chmielowiec.net>">
 	<title>Robert Chmielowiec - design</title>
+	<meta charset="utf-8">
+	<meta name="generator" content="Geany 0.20">
+	<meta name="author" content="Robert Chmielowiec <robert@chmielowiec.net>">
 	<link rel="stylesheet" type="text/css" href="base.css">
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -15,37 +23,74 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
+	<script type="text/javascript">
+		function hide(show) {
+			var items = document.getElementsByName('item');
+			for (i = 0; i < items.length; i++) {
+				if (items[i].value == show)
+					document.getElementById(items[i].value).style.display = 'block';
+				else
+					document.getElementById(items[i].value).style.display = 'none';
+			}
+		}
+		function display() {
+			hide(this.value);
+		}
+		function run() {
+			hide('item-1');
+
+			var items = document.getElementsByName('item');
+			for (i = 0; i < items.length; i++) {
+				items[i].onclick = display;
+			}
+		}
+	</script>
 </head>
 
-<body>
+<body onload="run()">
 	<div id="page">
-		<h1>Robert Chmielowiec</h1>
-		<h2><a href="/">contact</a> / <del><a>skills</a></del> / <a href="design.html">design</a></h2>
-
-		<div class="bottom">
-			<div class="item">
-				<a href="http://code.ksocha.com/teerace/">
-					<img src="imgs/teerace.jpg" alt="teerace" title="teerace">
-					LINK
-				</a>
-				<p class="right">Used: HTML5, CSS3</p>
-			</div>
-
-			<div class="item">
-				<a href="http://ksocha.com">
-					<img src="imgs/ksocha.jpg" alt="ksocha" title="ksocha.com">
-					LINK
-				</a>
-				<p class="right">Used: HTML5, CSS3, JS</p>
-			</div>
-
-			<div class="item">
-				<a href="http://voodoo.ksocha.com">
-					<img src="imgs/voodoo.jpg" alt="voodoo" title="voodoo.ksocha.com">
-					LINK
-				</a>
-				<p class="right">Used: HTML5, CSS2, GIMP</p>
-			</div>
+		<div id="header">
+			<h1>Robert Chmielowiec</h1>
 		</div>
+		<div id="menu">
+			<ul>
+				<li id="contact"><a href="/design/001/">Contact</a></li>
+				<li id="skills"><a href="">Skills</a></li>
+				<li id="design"><a href="/design/001/design.html">Design</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="items">
+				<div class="item" id="item-1">
+					<a href="http://code.ksocha.com/teerace/">
+						<img src="/imgs/teerace.jpg" alt="teerace" title="teerace">
+					</a>
+					<p class="right">Used: HTML5, CSS3</p>
+				</div>
+
+				<div class="item" id="item-2">
+					<a href="http://ksocha.com">
+						<img src="/imgs/ksocha.jpg" alt="ksocha" title="ksocha.com">
+					</a>
+					<p class="right">Used: HTML5, CSS3, JS</p>
+				</div>
+
+				<div class="item" id="item-3">
+					<a href="http://voodoo.ksocha.com">
+						<img src="/imgs/voodoo.jpg" alt="voodoo" title="voodoo.ksocha.com">
+					</a>
+					<p class="right">Used: HTML5, CSS2, GIMP</p>
+				</div>
+			</div>
+			<form class="switcher">
+				<input type="radio" name="item" value="item-1" checked="checked">
+				<input type="radio" name="item" value="item-2">
+				<input type="radio" name="item" value="item-3">
+			</form>
+		</div>
+		<div id="footer">Copyright &copy; 1991-2011 Robert Chmielowiec</div>
 	</div>
 </body>
+
+</html>
+
