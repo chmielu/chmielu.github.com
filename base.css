@@ -4,7 +4,7 @@
  */
 
 body {
-	background: #222 url(pattern.png);
+	background: #333 url(imgs/pattern.png);
 	font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, Geneva, Verdana, Freesans, 'Liberation Sans', Ayuthaya, Garuda, Loma, Waree, 'Lucida Grande', Tahoma, Freesans, sans-serif;
 	font-size: 11px;
 	text-align: justify;
@@ -45,31 +45,31 @@ input,
 button,
 a.button {
 	color: white !important;
-/*
 	background-color: #76afa6;
-*/
+/*
 	background-color: #444;
-	border: 1px solid;
-/*
-	border-color: #466963;
 */
-	border-color: #222;
+	border: 1px solid;
+	border-color: #466963;
 /*
+	border-color: #222;
+*/
 	-moz-box-shadow: inset 0 0 2px #fff, 1px 1px 1px #aaa;
 	-webkit-box-shadow: inset 0 0 2px #fff, 1px 1px 1px #aaa;
-*/
+/*
 	-moz-box-shadow: inset 0 0 1px #fff, 1px 1px 1px #aaa;
 	-webkit-box-shadow: inset 0 0 1px #fff, 1px 1px 1px #aaa;
+*/
 	border-radius: 3px;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 16px;
 	text-align: center;
 	text-decoration: none;
-/*
 	text-shadow: 1px 1px 1px #466963;
-*/
+/*
 	text-shadow: 1px 1px 1px #222;
+*/
 	padding: 3px 10px;
 	margin: 0;
 	cursor: pointer;
@@ -112,8 +112,8 @@ button::-moz-focus-inner {
 }
 
 #page {
-	-moz-box-shadow: 5px 5px 5px #111;
-	-webkit-box-shadow: 5px 5px 5px #111;
+	-moz-box-shadow: 5px 5px 5px #222;
+	-webkit-box-shadow: 5px 5px 5px #222;
 	width: 500px;
 	margin: -148px -250px;
 	position: absolute;
@@ -132,7 +132,7 @@ button::-moz-focus-inner {
 }
 
 #menu {
-	background: #a7a7a7 url(pattern.png);
+	background: #a7a7a7 url(imgs/pattern.png);
 	border-top: thin solid #bbb;
 	border-bottom: thin solid #ccc;
 	font-size: 16px;
@@ -218,7 +218,7 @@ li#design {
 
 #footer {
 	color: #000;
-	text-shadow: 0 1px 1px #333;
+	text-shadow: 0 1px 1px #444;
 	text-align: center;
 	width: inherit;
 	position: absolute;
