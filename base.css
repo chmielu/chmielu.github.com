@@ -21,14 +21,6 @@ h1 {
 	margin: 0;
 }
 
-img {
-	background: #fff;
-	border: thin solid #bbb;
-	-moz-box-shadow: 0 2px 6px #ccc;
-	-webkit-box-shadow: 0 2px 6px #ccc;
-	padding: 10px;
-}
-
 p {
 	line-height: 22px;
 }
@@ -222,6 +214,14 @@ li#design {
 
 	#content a:hover {
 		text-decoration: underline;
+	}
+
+	#content img {
+		background: #fff;
+		border: thin solid #bbb;
+		-moz-box-shadow: 0 2px 6px #ccc;
+		-webkit-box-shadow: 0 2px 6px #ccc;
+		padding: 10px;
 	}
 
 #footer {
