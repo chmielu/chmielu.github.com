@@ -17,6 +17,7 @@ h1 {
 	font-size: 36px;
 	font-weight: normal;
 	font-style: italic;
+	text-shadow: 0 1px 1px #fff;
 	margin: 0;
 }
 
@@ -127,14 +128,13 @@ button::-moz-focus-inner {
 	border-top-left-radius: 4px;
 	border-bottom: thin solid #666;
 	text-align: center;
-	text-shadow: 2px 2px 1px #aaa;
 	padding: 20px;
 }
 
 #menu {
 	background: #a7a7a7 url(imgs/pattern.png);
 	border-top: thin solid #bbb;
-	border-bottom: thin solid #ccc;
+	border-bottom: thin solid #bbb;
 	font-size: 16px;
 	font-variant: small-caps;
 	text-align: center;
@@ -144,14 +144,20 @@ button::-moz-focus-inner {
 }
 
 	#menu ul {
-		margin: 0;
+		list-style-type: none;
+		width: 400px;
+		margin: -1px 50px;
 		padding: 0;
+		overflow: hidden;
+		clear: both;
 	}
 
 	#menu li {
-		padding: 30px 40px 3px;
-		display: inline-block;
-		margin: -1px 0;
+		margin: 0;
+		padding: 30px 0 3px;
+		width: 33%;
+		display: block;
+		float: left;
 	}
 
 	#menu li:hover {
@@ -185,10 +191,12 @@ li#design {
 	border-bottom-left-radius: 4px;
 	padding: 20px;
 	overflow: hidden;
+	clear: both;
 }
 
 	#content ul {
 		font-size: inherit;
+		list-style-type: none;
 		margin: 0 0 20px 0;
 		padding: 0;
 	}
