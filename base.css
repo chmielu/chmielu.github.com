@@ -166,15 +166,15 @@ button::-moz-focus-inner {
 	}
 
 li#contact {
-	background: url(/imgs/contact.png) top center no-repeat;
+	background: url(imgs/contact.png) top center no-repeat;
 }
 
 li#skills {
-	background: url(/imgs/skills.png) top center no-repeat;
+	background: url(imgs/skills.png) top center no-repeat;
 }
 
 li#design {
-	background: url(/imgs/design.png) top center no-repeat;
+	background: url(imgs/design.png) top center no-repeat;
 }
 
 #content {
