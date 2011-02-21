@@ -37,6 +37,28 @@
 		function display() {
 			hide(this.value);
 		}
+		function prev () {
+			var inputs = document.getElementById('switcher').childNodes;
+			for (i = 0; i < inputs.length; i++) {
+				if (inputs[i].checked == true) {
+					if (i/2-0.5 == 0) i = 11;
+					inputs[i-2].checked = true;
+					hide("item-"+(i/2-0.5));
+					break;
+				}
+			}
+		}
+		function next () {
+			var inputs = document.getElementById('switcher').childNodes;
+			for (i = 0; i < inputs.length; i++) {
+				if (inputs[i].checked == true) {
+					if (i/2+1.5 == 6) i = -1;
+					inputs[i+2].checked = true;
+					hide("item-"+(i/2+1.5));
+					break;
+				}
+			}
+		}
 		function run() {
 			hide('item-1');
 
@@ -44,6 +66,9 @@
 			for (i = 0; i < items.length; i++) {
 				items[i].onclick = display;
 			}
+
+			document.getElementById('prev').onclick = prev;
+			document.getElementById('next').onclick = next;
 		}
 	</script>
 </head>
@@ -61,6 +86,8 @@
 			</ul>
 		</div>
 		<div id="content">
+			<div id="prev">&laquo;</div>
+			<div id="next">&raquo;</div>
 			<div class="items">
 				<div class="item" id="item-1">
 					<a href="http://code.ksocha.com/teerace/">
@@ -97,7 +124,7 @@
 					<p class="right">Used: HTML5, CSS3, JS, GIMP</p>
 				</div>
 			</div>
-			<form class="switcher">
+			<form id="switcher">
 				<input type="radio" name="item" value="item-1" checked="checked">
 				<input type="radio" name="item" value="item-2">
 				<input type="radio" name="item" value="item-3">
