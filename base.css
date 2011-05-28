@@ -1,0 +1,147 @@
+html {
+	color: #2e3436;
+	background-color: #eeeeec;
+	font-family: 'Droid Serif', serif;
+	font-size: 13px;
+}
+
+body {
+	width: 800px;
+	margin: 0 auto;
+}
+
+a {
+	color: #f57900;
+	text-decoration: none;
+	-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;
+}
+
+a:hover {
+	color: #8ae234;
+}
+
+p {
+	line-height: 20px;
+}
+
+ul.releases {
+	padding: 0;
+	list-style-type: none;
+}
+
+	ul.releases li {
+		margin: 5px 0;
+	}
+
+header, section {
+	padding: 20px;
+}
+
+	header h1 {
+		font-family: 'Josefin Slab', sans-serif;
+		font-weight: normal;
+		font-size: 56px;
+		text-shadow: 2px 2px 0 #fff;
+		margin: 0;
+	}
+
+		header h1 a {
+			color: inherit;
+		}
+
+section {
+	background-color: #fff;
+	border-bottom: 3px solid;
+	padding: 20px;
+	margin: 0 0 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+section.blue {
+	border-color: #729fcf;
+}
+
+section.yellow {
+	border-color: #fce94f;
+}
+
+section.green {
+	border-color: #8ae234;
+}
+
+section.red {
+	background: #fff url('images/eduardo.jpg') right top no-repeat;
+	border-color: #cc0000;
+}
+
+	section h2 {
+		color: #c00;
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+		font-weight: 300;
+		font-size: 28px;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+	}
+
+		section h2 a {
+			font-size: 18px;
+		}
+
+	section h3 {
+		color: #3465A4;
+		font-family: 'Droid Sans', sans-serif;
+		font-size: 16px;
+		margin: 0;
+	}
+
+	section .project {
+		width: 375px;
+		margin: 0 5px 20px 0;
+		float: left;
+	}
+
+		section .project .project-techs {
+			font-family: 'Droid Sans Mono', monospace;
+			font-size: 12px;
+		}
+
+		section .project .project-techs:before {
+			color: #555753;
+			content: 'used: '
+		}
+
+footer {
+	color: #888a85;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#contact {
+	float: right;
+}
+
+#profiles, #contact {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+	#profiles li {
+		margin-right: 20px;
+	}
+
+	#profiles li, #contact li {
+		display: inline-block;
+	}
+
+/* ######### COLOURS! ######### */
+
+.c:before { content: 'c'; color: #73d216; }
+.o:before { content: 'o'; color: #cc0000; }
+.l:before { content: 'l'; color: #edd400; }
+.u:before { content: 'u'; color: #75507b; }
+.r:before { content: 'r'; color: #f57900; }
+.s:before { content: 's'; color: #3465a4; }
+.mark:before { content: '!'; color: #c17d11; }
+.amp:before { content: '&'; color: #babdb6; margin: 0 3px; }
