@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #fff;
+	color: #999fa3;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+	font-size: 11px;
+	text-align: center;
+	line-height: 24px;
+}
+
+a {
+	border-bottom: thin solid #e6e6e6;
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: all 0.1s ease-in;
+	   -moz-transition: all 0.1s ease-in;
+	     -o-transition: all 0.1s ease-in;
+	        transition: all 0.1s ease-in;
+}
+
+a:hover {
+	color: #515e66;
+	border-color: #515e66;
+}
+
+img {
+	border-radius: 5px;
+}
+
+#logo {
+	background: url(../images/logo.png) center no-repeat;
+	width: 200px;
+	height: 125px;
+	margin: 30px auto;
+}
+
+#nav {
+	color: #515e66;
+	list-style: none;
+	margin: 0 0 20px;
+}
+
+#nav li {
+	width: 80px;
+	display: inline-block;
+}
+
+ul.works {
+	width: 640px;
+	margin: 0 auto;
+}
+
+ul.works a {
+	border-bottom: 0;
+}
+
+ul.works li {
+	margin-right: 20px;
+	display: inline;
+	float: left;
+}
+
+ul.works li:nth-child(3n+1) {
+	margin-right: 0;
+	float: right;
+}
+
+ul.works li.featured {
+	margin: 0 0 10px 0;
+	display: block;
+}
