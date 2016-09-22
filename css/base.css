@@ -23,12 +23,12 @@ header {
 }
 
 footer {
-    text-align: center;
     color: #aaa;
     margin-top: 20px;
 }
 
 #page {
+    text-align: center;
     width: 350px;
     height: 200px;
     position: absolute;
